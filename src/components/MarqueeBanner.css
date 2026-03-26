@@ -1,0 +1,31 @@
+.marquee-banner {
+  background: var(--color-yellow);
+  overflow: hidden;
+  padding: 20px 0;
+  white-space: nowrap;
+  border-top: 3px solid var(--color-black);
+  border-bottom: 3px solid var(--color-black);
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-item {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.marquee-dot {
+  font-size: 8px;
+  opacity: 0.5;
+}
