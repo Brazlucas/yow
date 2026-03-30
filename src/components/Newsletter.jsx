@@ -26,7 +26,7 @@ export default function Newsletter() {
             FAÇA PARTE DA YOW E DIGA ADEUS AOS DIAS FLATS!
           </h2>
           <p className="newsletter__sub">
-            Inscreva-se para atualizações, lançamentos de produtos e muito mais.
+            Inscreva-se e receba dicas de treino, novidades e conteúdos exclusivos sobre o universo do surf.
           </p>
         </div>
 

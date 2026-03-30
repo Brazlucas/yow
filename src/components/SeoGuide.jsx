@@ -3,7 +3,7 @@ import './SeoGuide.css'
 
 const STORE_URL = 'https://yowsurfskate.com.br'
 
-const heroImg = '/fotos-cliente/WhatsApp%20Image%202026-03-23%20at%2022.35.56.jpeg'
+const heroImg = '/foto-para-substituir.jpg.jpeg'
 
 const sections = [
   {
@@ -22,7 +22,15 @@ O sistema Meraki S5, desenvolvido pela Yow, é reconhecido mundialmente como o m
 
 Diferente de sistemas genéricos ou cópias, o Meraki S5 proporciona um movimento contínuo, controlado e extremamente preciso — algo que apenas produtos de engenharia europeia de alto nível conseguem entregar.
 
-Com um simulador de surf Yow, é possível reproduzir manobras como Bottom turn, Cutback, Carving, Snap e Pumping — tudo isso com uma fidelidade de movimento que posiciona a Yow Surf como a maior autoridade global no segmento.`,
+Com um simulador de surf Yow, é possível reproduzir manobras como:
+
+• Bottom turn
+• Cutback
+• Carving
+• Snap
+• Pumping
+
+Tudo isso com uma fidelidade de movimento que posiciona a Yow Surf como a maior autoridade global no segmento.`,
   },
   {
     id: 'beneficios',
@@ -75,9 +83,9 @@ Sistema de eixo — O coração de um simulador de surf é o seu sistema de eixo
 
 Tamanho e wheelbase — A Yow Surf oferece modelos com diferentes dimensões, todos projetados com base em estudos reais de dinâmica do surf, garantindo adaptação perfeita ao estilo de cada surfista.
 
-Qualidade dos materiais — Os simuladores de surf Yow são fabricados com maple canadense selecionado, processos industriais de alta precisão e padrão europeu de qualidade, garantindo resistência e durabilidade muito acima da média do mercado.
+Qualidade dos materiais — Aqui está um dos maiores diferenciais: Os simuladores de surf Yow são fabricados com maple canadense selecionado, processos industriais de alta precisão e padrão europeu de qualidade, garantindo resistência e durabilidade muito acima da média do mercado.
 
-Rodas: o fator decisivo no grip — As rodas Yow URA são referência mundial e estão disponíveis nas durezas:
+Rodas: o fator decisivo no grip — As rodas são fundamentais para o desempenho de um simulador de surf. As rodas Yow URA são referência mundial e estão disponíveis nas durezas:
 
 • 78A (MAYO) – máximo grip e estabilidade
 • 80A (MUSTARD) – equilíbrio perfeito entre grip e velocidade
@@ -167,6 +175,16 @@ export default function SeoGuide() {
             Seja você iniciante ou atleta experiente, o uso de um simulador de surf permite desenvolver habilidades 
             essenciais que impactam diretamente sua evolução nas ondas reais.
           </p>
+          <p className="seo-guide__lead">
+            Dentro desse cenário, a Yow Surf se destaca como a maior referência mundial em simulador de surf, entregando 
+            um nível de qualidade incomparável. Seus produtos são fabricados na Europa com materiais de altíssimo padrão, 
+            precisão extrema e durabilidade superior — características que colocam a marca no topo absoluto do mercado global.
+          </p>
+          <p className="seo-guide__lead">
+            Neste guia completo, você vai entender o que é um simulador de surf, como funciona, seus benefícios, como 
+            escolher o melhor modelo e por que a Yow Surf, com seu sistema Meraki S5, representa o que existe de mais 
+            avançado no mundo.
+          </p>
         </header>
 
         {/* Hero image for SEO Guide */}
@@ -218,15 +236,21 @@ export default function SeoGuide() {
 
         {/* Conclusion */}
         <footer className="seo-guide__conclusion animate">
-          <h3>Vale a Pena Investir em um Simulador de Surf?</h3>
+          <h3>Conclusão: Vale a Pena Investir em um Simulador de Surf?</h3>
           <p>
-            Sem dúvida, o simulador de surf é um dos melhores investimentos para evolução no surf. 
-            E quando falamos de qualidade, precisão e performance real, a escolha é clara: 
-            <strong> a Yow Surf entrega o mais alto nível de simulador de surf do mundo.</strong>
+            Sem dúvida, o simulador de surf é um dos melhores investimentos para evolução no surf.
+          </p>
+          <p style={{marginTop: '16px'}}>
+            E quando falamos de qualidade, precisão e performance real, a escolha é clara:
+          </p>
+          <p style={{marginTop: '16px'}}>
+            <strong>A Yow Surf entrega o mais alto nível de simulador de surf do mundo.</strong>
           </p>
           <p style={{marginTop: '16px'}}>
             Com o sistema Meraki S5, materiais premium, construção europeia e rodas de altíssimo desempenho (78A, 80A e 82A), 
-            cada detalhe é pensado para proporcionar a experiência mais próxima possível do surf real. 
+            cada detalhe é pensado para proporcionar a experiência mais próxima possível do surf real.
+          </p>
+          <p style={{marginTop: '16px'}}>
             Treinar com um simulador de surf Yow não é apenas treinar — é evoluir com o melhor equipamento disponível no planeta.
           </p>
         </footer>

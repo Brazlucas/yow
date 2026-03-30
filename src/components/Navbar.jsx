@@ -16,11 +16,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
-        <a href={STORE_URL} target="_blank" rel="noreferrer" className="navbar__logo">
-          <svg width="60" height="28" viewBox="0 0 120 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <text x="0" y="40" fontFamily="Jost, sans-serif" fontWeight="900" fontSize="48" letterSpacing="-2">YOW</text>
-          </svg>
-        </a>
+        <div className="navbar__logo" style={{ width: 60, visibility: 'hidden' }}>
+          {/* Logo removed verbatim request */}
+        </div>
 
         <ul className="navbar__links">
           <li><a href="#sobre">O que é?</a></li>

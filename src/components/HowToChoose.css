@@ -1,0 +1,117 @@
+.htc {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.htc__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 64px auto;
+}
+
+.htc__title {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.htc__title span {
+  color: var(--color-yellow-dark);
+}
+
+.htc__subtitle {
+  font-size: 18px;
+  color: var(--color-gray);
+}
+
+.htc__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.htc__card {
+  background: var(--color-gray-light);
+  border-radius: 16px;
+  padding: 40px 32px;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.htc__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.htc__card--large {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.htc__card-icon {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.htc__card-title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.htc__card-desc {
+  font-size: 15px;
+  color: var(--color-gray-dark);
+  line-height: 1.7;
+}
+
+.htc__options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+  list-style: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 32px;
+}
+
+.htc__options li {
+  background: var(--color-white);
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.htc__options li strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--color-black);
+}
+
+/* Wheel colors */
+.htc__options li:nth-child(1) strong { color: #5682C1; } /* Mayo/Blue implied */
+.htc__options li:nth-child(2) strong { color: #D4A017; } /* Mustard */
+.htc__options li:nth-child(3) strong { color: #C23B22; } /* Ketchup */
+
+@media (max-width: 900px) {
+  .htc__grid {
+    grid-template-columns: 1fr;
+  }
+  .htc__card--large {
+    grid-column: span 1;
+  }
+  .htc__options {
+    grid-template-columns: 1fr;
+  }
+}

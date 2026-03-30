@@ -1,10 +1,13 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Announcement from './components/Announcement'
-import About from './components/About'
 import Athletes from './components/Athletes'
 import MarqueeBanner from './components/MarqueeBanner'
-import SeoGuide from './components/SeoGuide'
+import BlogHero from './components/BlogHero'
+import WhatIsSimulator from './components/WhatIsSimulator'
+import BenefitsCarousel from './components/BenefitsCarousel'
+import LevelsSplit from './components/LevelsSplit'
+import HowToChoose from './components/HowToChoose'
+import LifestyleEditorial from './components/LifestyleEditorial'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 import './App.css'
@@ -12,13 +15,16 @@ import './App.css'
 function App() {
   return (
     <div className="app">
-      <Announcement />
       <Navbar />
       <Hero />
-      <About />
       <MarqueeBanner />
       <Athletes />
-      <SeoGuide />
+      <BlogHero />
+      <WhatIsSimulator />
+      <BenefitsCarousel />
+      <LevelsSplit />
+      <HowToChoose />
+      <LifestyleEditorial />
       <Newsletter />
       <Footer />
     </div>

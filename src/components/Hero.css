@@ -207,4 +207,7 @@
   .hero__content {
     justify-content: center;
   }
+  .hero__title {
+    font-size: clamp(40px, 12vw, 80px);
+  }
 }

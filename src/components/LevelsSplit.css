@@ -1,0 +1,125 @@
+.levels {
+  display: flex;
+  min-height: 80vh;
+}
+
+.levels__half {
+  flex: 1;
+  padding: 100px 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.levels__half--iniciantes {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.levels__half--avancados {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.levels__content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.levels__tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-yellow);
+}
+
+.levels__tag--dark {
+  background: var(--color-black);
+  color: var(--color-yellow);
+}
+
+.levels__title {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.levels__desc {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.levels__points {
+  margin-bottom: 40px;
+}
+
+.levels__points-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.levels__points ul {
+  list-style: none;
+}
+
+.levels__points li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.levels__points li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.levels__half--iniciantes .levels__points li::before {
+  color: var(--color-yellow);
+}
+
+.levels__half--avancados .levels__points li::before {
+  color: var(--color-black);
+}
+
+.levels__conclusion {
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.9;
+  border-left: 3px solid;
+  padding-left: 16px;
+}
+
+.levels__half--iniciantes .levels__conclusion {
+  border-color: var(--color-yellow);
+}
+
+.levels__half--avancados .levels__conclusion {
+  border-color: var(--color-black);
+}
+
+@media (max-width: 900px) {
+  .levels {
+    flex-direction: column;
+  }
+  .levels__half {
+    padding: 60px 24px;
+  }
+}

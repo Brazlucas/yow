@@ -41,6 +41,7 @@
   transition: opacity 0.7s ease, transform 0.7s ease;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .athlete-card::before {
@@ -104,6 +105,11 @@
   text-align: center;
   position: relative;
   z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.athlete-card:hover .athlete-card__info {
+  transform: translateY(-10px);
 }
 
 .athlete-card__eyebrow {
@@ -134,12 +140,149 @@
   line-height: 1.65;
 }
 
+.athlete-card__cta {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  transform: translateY(10px);
+  display: inline-block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.athlete-card:hover .athlete-card__cta {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 .athletes__grid--two {
   grid-template-columns: repeat(2, 1fr);
   max-width: 900px;
   margin: 2px auto 0;
+}
+
+/* ── MODAL ── */
+.athletes-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.athletes-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.athletes-modal__content {
+  position: relative;
+  background: var(--color-black);
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 100%;
+  max-width: 900px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+  animation: scaleIn 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  z-index: 1;
+}
+
+.athletes-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  color: var(--color-white);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.athletes-modal__close:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+  transform: scale(1.1);
+}
+
+.athletes-modal__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.athletes-modal__img {
+  height: 100%;
+  min-height: 400px;
+}
+
+.athletes-modal__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.athletes-modal__text {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.athletes-modal__eyebrow {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.athletes-modal__title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-white);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.athletes-modal__desc {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.athletes-modal__extended {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 24px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 @media (max-width: 900px) {
@@ -153,5 +296,15 @@
   .athlete-card {
     padding: 36px 24px;
     min-height: 400px;
+  }
+  .athletes-modal__split {
+    grid-template-columns: 1fr;
+  }
+  .athletes-modal__img {
+    min-height: 250px;
+    height: 250px;
+  }
+  .athletes-modal__text {
+    padding: 32px 24px;
   }
 }
