@@ -34,7 +34,7 @@ export default function Navbar() {
             rel="noreferrer"
             className="navbar__cta"
           >
-            Descubra
+            YOW SURF
           </a>
           <button
             className={`navbar__hamburger ${menuOpen ? 'active' : ''}`}

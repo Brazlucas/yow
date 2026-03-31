@@ -41,7 +41,7 @@ export default function Hero() {
               href="#sobre"
               className="btn btn--primary"
             >
-              Descubra o Movimento
+              YOW SURF
             </a>
             <a
               href="#faq"
