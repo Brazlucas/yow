@@ -1,5 +1,6 @@
 {
-  "name": "poc-luiz",
+  "name": "simulador-de-surf",
+  "homepage": "http://www.simuladordesurf.com.br/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

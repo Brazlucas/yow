@@ -41,7 +41,7 @@ export default function Hero() {
               href="#sobre"
               className="btn btn--primary"
             >
-              YOW SURF
+              SIMULADOR DE SURF
             </a>
             <a
               href="#faq"

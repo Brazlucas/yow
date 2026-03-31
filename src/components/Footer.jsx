@@ -20,8 +20,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <a href={STORE_URL} target="_blank" rel="noreferrer" className="footer__logo" aria-label="YOW Surf">
-            <img src="/yow-logo-oval.png" alt="Yow Surf" style={{ height: '48px', width: 'auto', display: 'block' }} />
+          <a href={STORE_URL} target="_blank" rel="noreferrer" className="footer__logo" aria-label="Simulador de Surf">
+            <img src="/footer-logo.png" alt="Simulador de Surf" style={{ height: '56px', width: 'auto', display: 'block' }} />
           </a>
           <p className="footer__tagline">
             Surfing life since 2011.<br />
@@ -84,7 +84,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container">
-          <p>© 2026 Yow Surf – Brasil</p>
+          <p>© 2026 Simulador de Surf – Brasil</p>
         </div>
       </div>
     </footer>
